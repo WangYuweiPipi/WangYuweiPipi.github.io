@@ -6,16 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | Ann&#39;s blog</title>
+  <title>自定义异常 | Ann&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="lunix,猫,Ann">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Ann&#39;s blog">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="#算法效率分析：时间复杂度、空间复杂度的计算 时间复杂度是总运算次数表达式中受n的变化影响最大的那一项。   O(1) &amp;lt; O(logn) &amp;lt; O(n) &amp;lt; O(nlogn) &amp;lt; O(n²) &amp;lt; O(n3) &amp;lt; O(2ⁿ) &amp;lt; O(n!) 时间复杂度空间复杂度一个算法的空间复杂度只考虑在运行过程中为局部变量分配的存储空间的大小，它包括为参数表中形参变量分">
+<meta name="keywords" content="lunix,猫,Ann">
+<meta property="og:type" content="article">
+<meta property="og:title" content="自定义异常">
+<meta property="og:url" content="http://yoursite.com/2018/11/14/时间空间复杂度计算/index.html">
 <meta property="og:site_name" content="Ann&#39;s blog">
+<meta property="og:description" content="#算法效率分析：时间复杂度、空间复杂度的计算 时间复杂度是总运算次数表达式中受n的变化影响最大的那一项。   O(1) &amp;lt; O(logn) &amp;lt; O(n) &amp;lt; O(nlogn) &amp;lt; O(n²) &amp;lt; O(n3) &amp;lt; O(2ⁿ) &amp;lt; O(n!) 时间复杂度空间复杂度一个算法的空间复杂度只考虑在运行过程中为局部变量分配的存储空间的大小，它包括为参数表中形参变量分">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-11-15T03:14:05.926Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Ann&#39;s blog">
+<meta name="twitter:title" content="自定义异常">
+<meta name="twitter:description" content="#算法效率分析：时间复杂度、空间复杂度的计算 时间复杂度是总运算次数表达式中受n的变化影响最大的那一项。   O(1) &amp;lt; O(logn) &amp;lt; O(n) &amp;lt; O(nlogn) &amp;lt; O(n²) &amp;lt; O(n3) &amp;lt; O(2ⁿ) &amp;lt; O(n!) 时间复杂度空间复杂度一个算法的空间复杂度只考虑在运行过程中为局部变量分配的存储空间的大小，它包括为参数表中形参变量分">
   
     <link rel="alternative" href="/atom.xml" title="Ann&#39;s blog" type="application/atom+xml">
   
@@ -145,88 +149,159 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-时间空间复杂度计算" class="article article-type-post " itemscope="" itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      自定义异常
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/11/14/时间空间复杂度计算/" class="archive-article-date">
+
+        
+        <a href="/2018/11/14/时间空间复杂度计算/" class="archive-article-date">
   	<time datetime="2018-11-14T02:12:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-14</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/11/14/时间空间复杂度计算/">自定义异常</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#算法效率分析：时间复杂度、空间复杂度的计算</p>
+<p>时间复杂度是总运算次数表达式中受n的变化影响最大的那一项。  </p>
+<p><code>O(1) &lt; O(logn) &lt; O(n) &lt; O(nlogn) &lt; O(n²) &lt; O(n3) &lt; O(2ⁿ) &lt; O(n!)</code></p>
+<h4 id="时间复杂度"><a href="#时间复杂度" class="headerlink" title="时间复杂度"></a>时间复杂度</h4><h4 id="空间复杂度"><a href="#空间复杂度" class="headerlink" title="空间复杂度"></a>空间复杂度</h4><p>一个算法的空间复杂度只考虑在运行过程中为局部变量分配的存储空间的大小，它包括为参数表中形参变量分配的存储空间和为在函数体中定义的局部变量分配的存储空间两个部分。若一个算法为递归算法，其空间复杂度为递归所使用的堆栈空间的大小，它等于一次调用所分配的临时存储空间的大小乘以被调用的次数(即为递归调用的次数加1，这个1表示开始进行的一次非递归调用)。算法的空间复杂度一般也以数量级的形式给出。如当一个算法的空间复杂度为一个常量，即不随被处理数据量n的大小而改变时，可表示为O(1)；当一个算法的空间复杂度与以2为底的n的对数成正比时，可表示为O(log2n)；当一个算法的空间复杂度与n成线性比例关系时，可表示为O(n).若形参为数组，则只需要为它分配一个存储由实参传送来的一个地址指针的空间，即一个机器字长空间；若形参为引用方式，则也只需要为其分配存储一个地址的空间，用它来存储对应实参变量的地址，以便由系统自动引用实参变量。</p>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/11/14/时间空间复杂度计算/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/10/24/王雨薇-Java开发工程师-简历/" class="archive-article-date">
-  	<time datetime="2018-10-24T13:26:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-24</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/10/24/王雨薇-Java开发工程师-简历/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">简历</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/10/24/王雨薇-Java开发工程师-简历/">简历</a>
-    </h1>
-  
+        
+        
+    </div>
+</aside>
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">个人</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
   
-    </div></section>
   
 
-    
+  
 
+  
+
+  
 
 
           </div>
@@ -250,8 +325,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: true,
