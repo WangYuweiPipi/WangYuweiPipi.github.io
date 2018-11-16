@@ -167,8 +167,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>时间复杂度是总运算次数表达式中受n的变化影响最大的那一项。  </p>
-<p><code>O(1) &lt; O(logn) &lt; O(n) &lt; O(nlogn) &lt; O(n²) &lt; O(n3) &lt; O(2ⁿ) &lt; O(n!)</code><br>
+        <p>通常有衡量两种算法效率的方法: 事后统计法和事前分析估算法。前者存在缺点：一是必须执行程序，二是存在其他因素掩盖算法本质。所以以下计算都通过事前分析估算法来分析。  </p>
+<h2 id="时间复杂度"><a href="#时间复杂度" class="headerlink" title="时间复杂度"></a>时间复杂度</h2><p><strong><em>定义</em></strong>  </p>
+<p>一个算法的执行时间是由其中执行的基本运算的执行次数来统计的。算法中基本运算执行次数T(n)是问题规模n的某个函数f(n):<br><strong>T(n) = O(f(n))</strong><br>记号“大O”表示随着问题规模n的增大，算法执行时间的增长率同f(n)的增长率成正比。时间复杂度总是运算
         
           <a class="article-more-a" href="/2018/11/14/时间空间复杂度计算/#more">more >></a>
         
@@ -179,6 +180,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">数据结构</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -378,6 +390,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">数据结构</a>
+              </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">个人</a>
