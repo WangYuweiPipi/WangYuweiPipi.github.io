@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Leecode-只出现一次的数字 | Ann&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="题目: 给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。 说明：   你的算法应该具有线性时间复杂度。 你可以不使用额外空间来实现吗？ 示例 1:   12输入: [2,2,1] 输出: 1 示例 2:    12输入: [4,1,2,1,2]输出: 4 看到一个十分优秀的算法，在此记录，以作复习。解根据计算机基础使用 ^ 异或运算符。相同为假">
-<meta name="keywords" content="-算法">
+  <meta name="description" content="看到一个十分优秀的算法解法，在此记录，以作复习。 题目:给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。 说明：你的算法应该具有线性时间复杂度。 你可以不使用额外空间来实现吗？">
+<meta name="keywords" content="算法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Leecode-只出现一次的数字">
 <meta property="og:url" content="http://yoursite.com/2019/02/21/Leecode-只出现一次的数字/index.html">
 <meta property="og:site_name" content="Ann&#39;s blog">
-<meta property="og:description" content="题目: 给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。 说明：   你的算法应该具有线性时间复杂度。 你可以不使用额外空间来实现吗？ 示例 1:   12输入: [2,2,1] 输出: 1 示例 2:    12输入: [4,1,2,1,2]输出: 4 看到一个十分优秀的算法，在此记录，以作复习。解根据计算机基础使用 ^ 异或运算符。相同为假">
+<meta property="og:description" content="看到一个十分优秀的算法解法，在此记录，以作复习。 题目:给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。 说明：你的算法应该具有线性时间复杂度。 你可以不使用额外空间来实现吗？">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-02-21T08:08:39.497Z">
+<meta property="og:updated_time" content="2019-02-21T08:15:10.263Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Leecode-只出现一次的数字">
-<meta name="twitter:description" content="题目: 给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。 说明：   你的算法应该具有线性时间复杂度。 你可以不使用额外空间来实现吗？ 示例 1:   12输入: [2,2,1] 输出: 1 示例 2:    12输入: [4,1,2,1,2]输出: 4 看到一个十分优秀的算法，在此记录，以作复习。解根据计算机基础使用 ^ 异或运算符。相同为假">
+<meta name="twitter:description" content="看到一个十分优秀的算法解法，在此记录，以作复习。 题目:给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。 说明：你的算法应该具有线性时间复杂度。 你可以不使用额外空间来实现吗？">
   
     <link rel="alternative" href="/atom.xml" title="Ann&#39;s blog" type="application/atom+xml">
   
@@ -169,15 +169,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><strong>题目:</strong></p>
-<p>给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。</p>
-<p><strong>说明：</strong>  </p>
-<p>你的算法应该具有线性时间复杂度。 你可以不使用额外空间来实现吗？</p>
-<p><strong>示例 1:</strong>  </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入: [2,2,1] </span><br><span class="line">输出: 1</span><br></pre></td></tr></table></figure>
-<p><strong>示例 2:</strong>   </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入: [4,1,2,1,2]</span><br><span class="line">输出: 4</span><br></pre></td></tr></table></figure>
-<h5 id="看到一个十分优秀的算法，在此记录，以作复习。"><a href="#看到一个十分优秀的算法，在此记录，以作复习。" class="headerlink" title="看到一个十分优秀的算法，在此记录，以作复习。"></a>看到一个十分优秀的算法，在此记录，以作复习。</h5><h3 id="解"><a href="#解" class="headerlink" title="解"></a>解</h3><p>根据计算机基础使用 <strong>^</strong> 异或运算符。<strong>相同为假，不同为真</strong>。可以得出：</p>
+        <p><strong>看到一个十分优秀的算法解法，在此记录，以作复习。</strong></p>
+<p><strong>题目:</strong><br>给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。</p>
+<p><strong>说明：</strong><br>你的算法应该具有线性时间复杂度。 你可以不使用额外空间来实现吗？</p>
+<a id="more"></a>
+<p><strong>示例 1:</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入: [2,2,1] </span><br><span class="line">输出: 1</span><br></pre></td></tr></table></figure></p>
+<p><strong>示例 2:</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入: [4,1,2,1,2]</span><br><span class="line">输出: 4</span><br></pre></td></tr></table></figure></p>
+<h3 id="解"><a href="#解" class="headerlink" title="解"></a>解</h3><p>根据计算机基础使用 <strong>^</strong> 异或运算符。<strong>相同为假，不同为真</strong>。可以得出：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">010 001</span><br><span class="line">^</span><br><span class="line">010 001</span><br><span class="line">=</span><br><span class="line">000 000</span><br></pre></td></tr></table></figure>
 <p>所以除只出现一次的元素外，其他元素均出现2次，异或运算后为0。以下为代码：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">private static int singleNumber(int[] nums) &#123;</span><br><span class="line">    int res = 0;</span><br><span class="line">    for (int d : nums) &#123;</span><br><span class="line">        res ^= d;</span><br><span class="line">    &#125;</span><br><span class="line">    return res;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -194,7 +192,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">-算法</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
         		</li>
       		
 		</ul>
@@ -346,11 +344,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">个人</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">java</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">个人</a>
+                <a href="javascript:void(0)" class="js-tag color3">算法</a>
               </li>
             
             <div class="clearfix"></div>
